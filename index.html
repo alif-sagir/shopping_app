@@ -316,16 +316,18 @@
         // }
         // load_page (# link used koray kora)
         function load_page() {
-            let link = window.location.hash.substring(1);
-            link += ".html"
-            link = window.location.origin + '/' + link;
-            // console.log(link);
-            fetch(link)
-                .then(response => response.text())
-                .then(response => {
-                    // console.log(response);
-                    output.innerHTML = response;
-                })
+            setTimeout(() => {
+                let link = window.location.hash.substring(1);
+                link += ".html"
+                link = window.location.origin + '/' + link;
+                // console.log(link);
+                fetch(link)
+                    .then(response => response.text())
+                    .then(response => {
+                        // console.log(response);
+                        output.innerHTML = response;
+                    })
+            }, 100);
         }
     </script>
 </body>
