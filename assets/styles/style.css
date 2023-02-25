@@ -1,0 +1,948 @@
+body,html{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+img,
+iframe,
+a,
+span,
+i {
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* responsive_desine_mixin */
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+/* color veriable */
+/* dark_mode_color */
+/* font name */
+/* border */
+/*full_area start*/
+.full_area {
+  background-image: url(../images/bg_3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 0px solid red;
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.full_area .full_area_container {
+  border: 0px solid red;
+  overflow: hidden;
+}
+@media screen and (max-width: 575.9px) {
+  .full_area .full_area_container {
+    margin: 0px 0px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.9px) {
+  .full_area .full_area_container {
+    margin: 0px 98px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.9px) {
+  .full_area .full_area_container {
+    margin: 0px 188px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.9px) {
+  .full_area .full_area_container {
+    margin: 0px 308px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399.9px) {
+  .full_area .full_area_container {
+    margin: 0px 398px;
+  }
+}
+@media (min-width: 1400px) {
+  .full_area .full_area_container {
+    margin: 0px 488px;
+  }
+}
+.full_area .full_area_container .device_area {
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  overflow: hidden;
+  position: relative;
+}
+
+/*full_area end*/
+/* headera_area start */
+.headera_area_full {
+  border: 0px solid red;
+}
+.headera_area_full .headera_area_container {
+  border: 0px solid red;
+  display: flex;
+  justify-content: space-between;
+  margin: 17px 0px;
+  /* headera_area_left */
+  /* headera_area_right */
+}
+.headera_area_full .headera_area_container .header_icon {
+  border: 0px solid red;
+}
+.headera_area_full .headera_area_container .header_icon i {
+  border: 0px solid red;
+  background: rgba(255, 250, 252, 0.7);
+  padding: 8px 12px;
+  font-size: 25px;
+  border-radius: 5px;
+  color: #a2a2a2;
+  cursor: pointer;
+  transition-duration: 0.6s;
+}
+.headera_area_full .headera_area_container .header_icon i:hover {
+  color: white;
+  background: linear-gradient(115deg, rgb(243, 142, 98) 0%, rgb(246, 71, 164) 50%, rgb(206, 79, 210) 100%);
+}
+/* headera_area end */
+/* section_area start */
+.section_area_full {
+  border: 0px solid red;
+  height: 490px;
+}
+.section_area_full .section_area_container {
+  border: 0px solid red;
+  /*title_area*/
+  /*bag_area*/
+}
+.section_area_full .section_area_container .title_area_full .title_area {
+  border: 0px solid red;
+  text-align: center;
+}
+.section_area_full .section_area_container .title_area_full .title_area h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Poppins";
+  font-size: 28px;
+  background-color: white;
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 10px;
+  position: relative;
+}
+.section_area_full .section_area_container .title_area_full .title_area h1 .text {
+  z-index: 100;
+  position: relative;
+}
+.section_area_full .section_area_container .title_area_full .title_area h1::after {
+  content: "";
+  bottom: -31px;
+  left: 40%;
+  position: absolute;
+  background-color: white;
+  width: 70px;
+  height: 48px;
+  transform: rotate(71deg) skew(50deg) translateX(-68%);
+  z-index: 10;
+  border-radius: 10px;
+}
+.section_area_full .section_area_container .bag_area {
+  border: 0px solid red;
+  width: 160px;
+  margin: 50px auto;
+}
+.section_area_full .section_area_container .bag_area img {
+  width: 100%;
+}
+.section_area_full .section_area_container .button_area_full {
+  border: 0px solid red;
+  margin: 0px 25px;
+  /*sopping_button_area*/
+  /*section_local_button*/
+}
+.section_area_full .section_area_container .button_area_full .sopping_button_area {
+  border: 0px solid red;
+  text-align: center;
+}
+.section_area_full .section_area_container .button_area_full .sopping_button_area button {
+  font-family: "Poppins";
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 0px;
+  color: white;
+  padding: 10px 20px;
+  font-size: 20px;
+  background: linear-gradient(115deg, rgb(243, 142, 98) 0%, rgb(246, 71, 164) 50%, rgb(206, 79, 210) 100%);
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgb(243, 142, 98);
+  transition-duration: 0.6s;
+}
+.section_area_full .section_area_container .button_area_full .sopping_button_area button:hover {
+  background: linear-gradient(148deg, rgb(142, 214, 229) 0%, rgb(202, 79, 229) 100%);
+}
+.section_area_full .section_area_container .button_area_full .section_local_button {
+  border: 0px solid red;
+  display: flex;
+  justify-content: space-between;
+  margin: 35px 0px;
+}
+.section_area_full .section_area_container .button_area_full .section_local_button .local_button {
+  border: 0px solid red;
+  display: inline-block;
+}
+.section_area_full .section_area_container .button_area_full .section_local_button .local_button button {
+  border: 0px;
+  text-transform: uppercase;
+  font-family: "Poppins";
+  font-size: 12px;
+  padding: 10px 20px;
+  color: #080405;
+  background-color: rgba(255, 250, 252, 0.7);
+  border-radius: 10px;
+  font-weight: bold;
+  transition-duration: 0.6s;
+}
+.section_area_full .section_area_container .button_area_full .section_local_button .local_button button:hover {
+  color: white;
+  background: linear-gradient(115deg, rgb(243, 142, 98) 0%, rgb(246, 71, 164) 50%, rgb(206, 79, 210) 100%);
+}
+.section_area_full .section_area_container .button_area_full .paragraph_area {
+  border: 0px solid red;
+  text-align: center;
+}
+.section_area_full .section_area_container .button_area_full .paragraph_area p {
+  font-family: "Poppins";
+  font-size: 12px;
+  color: #080405;
+  text-transform: inherit;
+}
+
+/* section_area end */
+/* footer_area start */
+.footer_area_full {
+  border: 0px solid red;
+  background-color: rgba(255, 250, 252, 0.7);
+  border-radius: 50px;
+}
+.footer_area_full .footer_area_container .footer_content ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 0px;
+}
+.footer_area_full .footer_area_container .footer_content ul li a i {
+  font-size: 25px;
+  color: #a2a2a2;
+  cursor: pointer;
+}
+.footer_area_full .footer_area_container .footer_content ul li a i:hover {
+  /*greadent_text_use start*/
+  background: linear-gradient(to right, #E8936E 0%, #EE4BA8 50%, #ca4fce 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /*greadent_text_use end*/
+}
+
+/* footer_area end */
+/*product_area_start*/
+.product_area_full {
+  border: 0px solid red;
+}
+.product_area_full .prodect_area_container {
+  border: 0px solid red;
+}
+
+/*search_area start*/
+.search_area_full {
+  position: relative;
+  margin-bottom: 20px;
+  border: 0px solid red;
+  padding-bottom: 10px;
+}
+.search_area_full .input_area input {
+  width: 100%;
+  padding-left: 35px;
+  font-family: "Poppins";
+  color: #7a7878;
+  padding: 7px 0px 7px 35px;
+  font-size: 15px;
+  border: 0px;
+  border-radius: 10px;
+  background: rgba(255, 250, 252, 0.7);
+}
+.search_area_full .icon i {
+  position: absolute;
+  top: 11px;
+  left: 10px;
+  color: #7a7878;
+}
+
+/*search_area end*/
+/*product_content start*/
+.product_content {
+  border: 0px solid red;
+  background: rgba(255, 250, 252, 0.7);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px 0px;
+}
+.product_content .product_img {
+  border: 0px solid red;
+  height: 79px;
+  width: 80px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  cursor: pointer;
+  overflow: hidden;
+}
+.product_content .product_img img {
+  border: 0px solid red;
+  width: 100%;
+}
+.product_content .product_text {
+  border: 0px solid red;
+  margin: 8px 0px 9px 10px;
+  line-height: 15px;
+}
+.product_content .product_text .product_title {
+  border: 0px solid red;
+}
+.product_content .product_text .product_title span {
+  font-family: "Poppins";
+  font-size: 14px;
+  color: #080405;
+  text-transform: capitalize;
+}
+.product_content .product_text .product_select {
+  border: 0px solid red;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 600;
+}
+.product_content .product_text .product_select .minas {
+  font-family: "Poppins";
+  color: #7a7878;
+  cursor: pointer;
+}
+.product_content .product_text .product_select .number {
+  font-family: "Poppins";
+  padding: 0px 10px;
+  background: rgba(174, 148, 158, 0.14);
+  margin: 0px 8px;
+  line-height: 23px;
+  border-radius: 2px;
+}
+.product_content .product_text .product_select .plus {
+  font-family: "Poppins";
+  color: #7a7878;
+  cursor: pointer;
+}
+.product_content .product_text .product_price {
+  border: 0px solid red;
+  text-align: center;
+  margin-right: 45px;
+}
+.product_content .product_text .product_price span {
+  font-family: "Poppins";
+  font-size: 16px;
+  color: #7a7878;
+  text-transform: capitalize;
+}
+
+/*product_content_end*/
+/*product_area_end*/
+/*product_description_area_start*/
+.product_description_area_full {
+  border: 0px solid red;
+  height: 500px;
+}
+/*product_detail_area start*/
+.product_detail_area {
+  border: 0px solid red;
+  background: rgba(255, 250, 252, 0.7);
+  padding: 15px;
+  border-radius: 10px;
+}
+.product_detail_area .product_image_area {
+  display: flex;
+  justify-content: center;
+}
+.product_detail_area .product_image_area .product_image {
+  border: 0px solid red;
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  overflow: hidden;
+}
+.product_detail_area .product_image_area .product_image img {
+  width: 100%;
+  border: 0px solid red;
+}
+.product_detail_area .product_title_area {
+  border: 0px solid red;
+  margin: 10px 0px;
+  line-height: 15px;
+}
+.product_detail_area .product_title_area .main_title {
+  border: 0px solid red;
+  margin-bottom: 5px;
+}
+.product_detail_area .product_title_area .main_title span {
+  font-size: 16px;
+  font-family: "Poppins";
+  font-weight: 900;
+  color: #080405;
+  text-transform: capitalize;
+}
+.product_detail_area .product_title_area .sub_title {
+  border: 0px solid red;
+}
+.product_detail_area .product_title_area .sub_title span {
+  font-size: 12px;
+  font-family: "Poppins";
+  font-weight: 500;
+  color: #080405;
+  text-transform: capitalize;
+}
+.product_detail_area .product_detail_button {
+  border: 0px solid red;
+  text-align: end;
+}
+.product_detail_area .product_detail_button button {
+  border: 0px;
+  text-transform: uppercase;
+  font-family: "Poppins";
+  font-size: 12px;
+  padding: 7px 12px;
+  color: white;
+  background: linear-gradient(115deg, rgb(243, 142, 98) 0%, rgb(246, 71, 164) 50%, rgb(206, 79, 210) 100%);
+  border-radius: 10px;
+  font-weight: 600;
+  transition-duration: 0.6s;
+}
+.product_detail_area .product_detail_button button:hover {
+  background: linear-gradient(148deg, rgb(142, 214, 229) 0%, rgb(202, 79, 229) 100%);
+}
+
+/*product_detail_area end*/
+/*description_middle_text_area start*/
+.description_middle_text_area {
+  border: 0px solid red;
+  margin: 20px 0px;
+  /*logo and title*/
+  /*text_content*/
+}
+.description_middle_text_area .description_middle_text_logo_title {
+  border: 0px solid red;
+  display: flex;
+  margin-bottom: 5px;
+}
+.description_middle_text_area .description_middle_text_logo_title .logo {
+  border: 0px solid red;
+}
+.description_middle_text_area .description_middle_text_logo_title .logo i {
+  background: linear-gradient(to right, #E8936E 0%, #EE4BA8 50%, #ca4fce 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 28px;
+  margin-right: 10px;
+}
+.description_middle_text_area .description_middle_text_logo_title .title {
+  border: 0px solid red;
+}
+.description_middle_text_area .description_middle_text_logo_title .title span {
+  font-size: 13px;
+  font-family: "Poppins";
+  font-weight: 900;
+  color: #080405;
+  text-transform: capitalize;
+}
+.description_middle_text_area .description_middle_text_content {
+  border: 0px solid red;
+}
+.description_middle_text_area .description_middle_text_content span {
+  font-size: 12px;
+  font-family: "Poppins";
+  font-weight: 500;
+  color: #080405;
+  text-transform: inherit;
+}
+
+/*description_middle_text_area end*/
+/*description_product_area start*/
+.description_product_area_full .product_area_title {
+  border: 0px solid red;
+  margin-bottom: 5px;
+}
+.description_product_area_full .product_area_title span {
+  font-size: 13px;
+  font-family: "Poppins";
+  font-weight: 900;
+  color: #080405;
+}
+.description_product_area_full .product_area_title span::first-letter {
+  text-transform: capitalize;
+}
+
+/*description_product_area*/
+.description_product_area {
+  border: 0px solid red;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  /*product_image start*/
+}
+.description_product_area .product_image_and_contend {
+  border: 0px solid red;
+  width: 115px;
+  background: rgba(255, 250, 252, 0.7);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 15px 0px;
+}
+.description_product_area .product_image_and_contend .image_1 {
+  border: 0px solid red;
+  width: 85px;
+  height: 60px;
+  margin: auto;
+  overflow: hidden;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.description_product_area .product_image_and_contend .image_1 img {
+  width: 100%;
+}
+.description_product_area .product_image_and_contend .title {
+  border: 0px solid red;
+  text-align: center;
+  margin-top: 3px;
+}
+.description_product_area .product_image_and_contend .title span {
+  font-family: "Poppins";
+  font-size: 14px;
+  color: #080405;
+  text-transform: capitalize;
+}
+
+/*description_product_area start*/
+/*product_description_area_end*/
+/*account_area_shoe_hide_start*/
+/*account_area_shoe_hide_end*/
+/*account_area_start*/
+.all_content_area {
+  height: 567px;
+  overflow: hidden;
+  margin: 35px;
+  position: absolute;
+  top: -37px;
+  left: -150%;
+  z-index: 99999999;
+  background: linear-gradient(115deg, rgb(243, 142, 98) 0%, rgb(246, 71, 164) 50%, rgb(206, 79, 210) 100%);
+  width: 78%;
+  transition-duration: 0.6s;
+}
+.all_content_area.active {
+  left: -35px;
+}
+
+.accountt_area_full {
+  border: 0px solid red;
+}
+
+.account_header_area_full {
+  border: 0px solid red;
+  background: rgba(255, 250, 252, 0.7);
+}
+.account_header_area_full .account_header_area_content {
+  border: 0px solid red;
+  display: flex;
+  padding: 10px 0px;
+}
+.account_header_area_full .account_header_area_content .user_image {
+  width: 60px;
+  height: 60px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 100px;
+}
+.account_header_area_full .account_header_area_content .user_image img {
+  width: 100%;
+}
+.account_header_area_full .account_header_area_content .user_name {
+  border: 0px solid red;
+  margin-left: 10px;
+  align-items: center;
+  display: flex;
+  width: 129px;
+  height: 60px;
+  overflow: hidden;
+}
+.account_header_area_full .account_header_area_content .user_name span {
+  font-family: "Poppins";
+  text-transform: capitalize;
+  font-size: 17px;
+  color: #080405;
+}
+
+/*setting_content_area start*/
+.setting_content_area {
+  height: 570px;
+  overflow-y: scroll;
+}
+
+/*setting_content_area end*/
+/*preferences_area_start*/
+.preferences_area_full {
+  background: rgba(255, 250, 252, 0.3);
+  margin: 20px 0px;
+  padding: 20px 0px;
+  border: 0px solid red;
+}
+.preferences_area_full .preferences_area_container {
+  border: 0px solid red;
+}
+
+/* preferences_title */
+.preferences_title {
+  border: 0px solid red;
+  margin-bottom: 15px;
+}
+.preferences_title h3 {
+  font-family: "Poppins";
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 600;
+  color: #080405;
+}
+
+/*preferences_content_all*/
+.preferences_content_all {
+  border: 0px solid red;
+}
+
+/*preferences_content_start*/
+.content_icon_and_text {
+  display: flex;
+  margin: 20px 0px;
+  border: 0px solid red;
+  /*dark theme area start*/
+  /*dark theme area end*/
+}
+.content_icon_and_text .content_icon_text_and_chackbox {
+  display: flex;
+}
+.content_icon_and_text .content_icon {
+  width: 30px;
+  border: 0px solid red;
+  align-items: center;
+  display: flex;
+}
+.content_icon_and_text .content_icon i {
+  font-size: 10px;
+  font-size: 14px;
+  color: #7a7878;
+}
+.content_icon_and_text .content_text {
+  align-items: center;
+  display: flex;
+  border: 0px solid red;
+}
+.content_icon_and_text .content_text span {
+  font-family: "Poppins";
+  text-transform: capitalize;
+  font-size: 13px;
+  color: #080405;
+}
+.content_icon_and_text .check_box {
+  align-items: center;
+  display: flex;
+}
+.content_icon_and_text .check_box form {
+  align-items: center;
+  display: flex;
+}
+/*dark theme area start*/
+.content_icon_text_and_chackbox_all {
+  justify-content: space-between;
+}
+
+/*dark theme area end*/
+/*preferences_area_end*/
+/*account_area_start*/
+.account_area_full {
+  border: 0px solid red;
+  background: rgba(255, 250, 252, 0.3);
+  margin: 20px 0px;
+  padding: 20px 0px;
+}
+.account_area_full .account_area_container {
+  border: 0px solid red;
+}
+
+/*account_title*/
+.account_title {
+  border: 0px solid red;
+}
+.account_title h3 {
+  font-family: "Poppins";
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 600;
+  color: #080405;
+}
+
+/*account_content_all start*/
+.account_content_all {
+  border: 0px solid red;
+  /*account_content_start*/
+}
+.account_content_all .account_icon_and_text {
+  display: flex;
+  margin: 20px 0px;
+  border: 0px solid red;
+}
+.account_content_all .account_icon_and_text .account_icon {
+  width: 30px;
+  border: 0px solid red;
+  align-items: center;
+  display: flex;
+}
+.account_content_all .account_icon_and_text .account_icon i {
+  font-size: 14px;
+  color: #7a7878;
+}
+.account_content_all .account_icon_and_text .account_text {
+  border: 0px solid red;
+  align-items: center;
+  display: flex;
+}
+.account_content_all .account_icon_and_text .account_text span {
+  font-family: "Poppins";
+  text-transform: capitalize;
+  font-size: 13px;
+  color: #080405;
+}
+
+/*account_area_end*/
+/*account_area_end*/
+/*profile_area_start*/
+.profile_area_full {
+  border: 0px solid red;
+  height: 650px;
+}
+/*profile_img start*/
+.profile_img_area_full {
+  border: 0px solid red;
+}
+.profile_img_area_full .profile_img {
+  border: 0px solid red;
+  justify-content: center;
+  display: flex;
+  margin-top: 30px;
+}
+.profile_img_area_full .profile_img .image_e {
+  width: 200px;
+  height: 200px;
+  border: 0px solid red;
+  overflow: hidden;
+  border-radius: 100px;
+}
+.profile_img_area_full .profile_img .image_e img {
+  width: 100%;
+}
+
+/*profile_img end*/
+/*profile_name start*/
+.profile_name_area_full {
+  border: 0px solid red;
+}
+.profile_name_area_full .profile_name {
+  border: 0px solid red;
+  overflow: hidden;
+  align-items: center;
+  display: flex;
+  margin: 15px 0px;
+}
+.profile_name_area_full .profile_name span {
+  font-family: "Poppins";
+  text-transform: capitalize;
+  font-size: 25px;
+  color: #080405;
+}
+
+/*profile_name end*/
+/*address_phone_gmail_edit_area_full start*/
+.address_phone_gmail_edit_area_full {
+  border: 0px solid red;
+  background: rgba(255, 250, 252, 0.3);
+  padding: 15px 0px;
+  /*address_phone_gmail and edit_area start*/
+}
+.address_phone_gmail_edit_area_full .address_phone_gmail_edit_area {
+  border: 0px solid red;
+  justify-content: space-between;
+  padding: 10px 0px;
+  /*address_phone_gmail area*/
+  /*edit_area*/
+}
+.address_phone_gmail_edit_area_full .address_phone_gmail_edit_area .icon_title {
+  border: 0px solid red;
+  display: flex;
+  margin-bottom: 5px;
+}
+.address_phone_gmail_edit_area_full .address_phone_gmail_edit_area .icon_title .icon {
+  border: 0px solid red;
+  width: 20px;
+  align-items: center;
+  display: flex;
+}
+.address_phone_gmail_edit_area_full .address_phone_gmail_edit_area .icon_title .icon i {
+  border: 0px solid red;
+  font-size: 16px;
+  color: #7a7878;
+}
+.address_phone_gmail_edit_area_full .address_phone_gmail_edit_area .icon_title .name_title {
+  border: 0px solid red;
+  overflow: hidden;
+  align-items: center;
+  display: flex;
+}
+.address_phone_gmail_edit_area_full .address_phone_gmail_edit_area .icon_title .name_title span {
+  border: 0px solid red;
+  font-family: "Poppins";
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 600;
+  color: #080405;
+}
+.address_phone_gmail_edit_area_full .address_phone_gmail_edit_area .text_edit-icon {
+  border: 0px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+.address_phone_gmail_edit_area_full .address_phone_gmail_edit_area .text_edit-icon .name_text {
+  border: 0px solid red;
+  overflow: hidden;
+  margin-left: 20px;
+  align-items: center;
+  display: flex;
+}
+.address_phone_gmail_edit_area_full .address_phone_gmail_edit_area .text_edit-icon .name_text span {
+  border: 0px solid red;
+  font-family: "Poppins";
+  text-transform: capitalize;
+  font-size: 14px;
+  color: #080405;
+}
+.address_phone_gmail_edit_area_full .address_phone_gmail_edit_area .text_edit-icon .edit_icon {
+  align-items: center;
+  display: flex;
+}
+.address_phone_gmail_edit_area_full .address_phone_gmail_edit_area .text_edit-icon .edit_icon i {
+  border: 0px solid red;
+  padding: 4px;
+  font-size: 12px;
+  color: #7a7878;
+  border-radius: 5px;
+  background: rgba(174, 148, 158, 0.14);
+}
+
+/*profile_address_phone_gmail start*/
+.profile_address_phone_gmail {
+  border: 0px solid red;
+}
+.profile_address_phone_gmail table {
+  border: 0px solid red;
+}
+.profile_address_phone_gmail table tr {
+  display: flex;
+}
+.profile_address_phone_gmail table tr .icon_title {
+  display: flex;
+}
+.profile_address_phone_gmail table tr .icon_title .name_icon {
+  border: 0px solid red;
+  margin-right: 10px;
+}
+.profile_address_phone_gmail table tr .icon_title .name_icon i {
+  font-size: 16px;
+  color: #7a7878;
+}
+.profile_address_phone_gmail table tr .icon_title .name_title {
+  border: 0px solid red;
+}
+.profile_address_phone_gmail table tr .icon_title .name_title span {
+  font-family: "Poppins";
+  text-transform: capitalize;
+  font-size: 16px;
+  color: #080405;
+}
+.profile_address_phone_gmail table tr .semecolon {
+  border: 0px solid red;
+  margin: 0px 5px;
+}
+.profile_address_phone_gmail table tr .semecolon span {
+  font-family: "Poppins";
+  font-size: 16px;
+  color: #080405;
+}
+.profile_address_phone_gmail table tr .content_name_edit_area {
+  display: flex;
+  border: 0px solid red;
+}
+.profile_address_phone_gmail table tr .content_name_edit_area .name_content {
+  border: 0px solid red;
+}
+.profile_address_phone_gmail table tr .content_name_edit_area .name_content span {
+  font-family: "Poppins";
+  text-transform: capitalize;
+  font-size: 16px;
+  color: #080405;
+}
+.profile_address_phone_gmail table tr .content_name_edit_area .edit_area {
+  display: flex;
+}
+.profile_address_phone_gmail table tr .content_name_edit_area .edit_area .edit_icon i {
+  font-size: 16px;
+  color: #080405;
+}
+.profile_address_phone_gmail table tr .content_name_edit_area .edit_area .edit_text span {
+  font-family: "Poppins";
+  text-transform: capitalize;
+  font-size: 16px;
+  color: #080405;
+}
+
+/*profile_address_phone_gmail end*/
+/*profile_area_end*/
+
+/*# sourceMappingURL=style.css.map */

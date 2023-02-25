@@ -1,0 +1,218 @@
+/*product_description_area_start*/
+.product_description_area_full {
+    border: $border;
+    height: 500px;
+    
+    .product_description_container {
+        // border: $border;
+    }
+}
+
+/*product_detail_area start*/
+.product_detail_area {
+    border: $border;
+    background: $icon_bg_color;
+    padding: 15px;
+    border-radius: 10px;
+
+    .product_image_area {
+        display: flex;
+        justify-content: center;
+
+        .product_image {
+            border: $border;
+            width: 100px;
+            height: 100px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            overflow: hidden;
+            // border: 1px solid;
+
+            img {
+                width: 100%;
+                border: $border;
+            }
+        }
+    }
+
+    .product_title_area {
+        border: $border;
+        margin: 10px 0px;
+        line-height: 15px;
+
+        .main_title {
+            border: $border;
+            margin-bottom: 5px;
+
+            span {
+                font-size: 16px;
+                font-family: "Poppins";
+                font-weight: 900;
+                color: #080405;
+                text-transform: capitalize;
+            }
+        }
+
+        .sub_title {
+            border: $border;
+
+            span {
+                font-size: 12px;
+                font-family: "Poppins";
+                font-weight: 500;
+                color: #080405;
+                text-transform: capitalize;
+            }
+        }
+    }
+
+    .product_detail_button {
+        border: $border;
+        text-align: end;
+
+        button {
+            border: 0px;
+            text-transform: uppercase;
+            font-family: "Poppins";
+            font-size: 12px;
+            padding: 7px 12px;
+            color: $white;
+            background: $button_gc_color;
+            border-radius: 10px;
+            font-weight: 600;
+            transition-duration: 0.6s;
+
+            &:hover {
+                background: $button_gc_color2;
+            }
+        }
+    }
+}
+
+/*product_detail_area end*/
+/*description_middle_text_area start*/
+.description_middle_text_area {
+    border: $border;
+    margin: 20px 0px;
+
+    /*logo and title*/
+    .description_middle_text_logo_title {
+        border: $border;
+        display: flex;
+        margin-bottom: 5px;
+
+        .logo {
+            border: $border;
+
+            i {
+                background: $text_gc_color;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 28px;
+                margin-right: 10px;
+            }
+        }
+
+        .title {
+            border: $border;
+
+            span {
+                font-size: 13px;
+                font-family: "Poppins";
+                font-weight: 900;
+                color: #080405;
+                text-transform: capitalize;
+
+            }
+        }
+    }
+
+    /*text_content*/
+    .description_middle_text_content {
+        border: $border;
+
+        span {
+            font-size: 12px;
+            font-family: "Poppins";
+            font-weight: 500;
+            color: #080405;
+            text-transform: inherit;
+        }
+    }
+}
+
+/*description_middle_text_area end*/
+/*description_product_area start*/
+.description_product_area_full {
+    .product_area_title {
+        border: $border;
+        margin-bottom: 5px;
+
+        span {
+            font-size: 13px;
+            font-family: "Poppins";
+            font-weight: 900;
+            color: #080405;
+
+            &::first-letter {
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
+/*description_product_area*/
+.description_product_area {
+    border: $border;
+    display: grid;
+    grid-template-columns: 1fr auto;
+
+
+
+    /*product_image start*/
+    .product_image_and_contend {
+        border: $border;
+        width: 115px;
+        // height: 100px;
+        background: $icon_bg_color;
+        border-radius: 10px;
+        padding: 10px;
+        // padding: 10px;
+        margin: 15px 0px;
+
+
+        .image_1 {
+            border: $border;
+            width: 85px;
+            height: 60px;
+            margin: auto;
+            overflow: hidden;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+
+
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .title {
+            border: $border;
+            text-align: center;
+            margin-top: 3px;
+
+            span {
+                font-family: "Poppins";
+                font-size: 14px;
+                color: #080405;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
+/*description_product_area start*/
+/*product_description_area_end*/

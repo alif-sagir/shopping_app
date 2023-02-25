@@ -1,0 +1,240 @@
+/*account_area_shoe_hide_start*/
+
+/*account_area_shoe_hide_end*/
+
+/*account_area_start*/
+.all_content_area{
+height: 567px;
+overflow: hidden;
+margin: 35px;
+position: absolute;
+top: -37px;
+left: -150%;
+z-index: 99999999;
+background:$button_gc_color;
+width: 78%;
+transition-duration: .6s;
+&.active{
+    left: -35px;
+}
+
+}
+
+
+
+.accountt_area_full {
+    border: $border;
+}
+
+.account_header_area_full {
+    border: $border;
+    background: $icon_bg_color;
+
+    // background: ;
+    .account_header_area_content {
+        border: $border;
+        display: flex;
+        padding: 10px 0px;
+
+        //         height: 61px;
+        // overflow: hidden;
+
+        .user_image {
+            width: 60px;
+            height: 60px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+            // border: 3px solid $button_gc_color2;
+            border-radius: 100px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .user_name {
+            border: $border;
+            margin-left: 10px;
+            align-items: center;
+            display: flex;
+            width: 129px;
+            height: 60px;
+            overflow: hidden;
+
+            span {
+                font-family: $Poppins;
+                text-transform: capitalize;
+                font-size: 17px;
+                color: $color;
+            }
+        }
+    }
+}
+/*setting_content_area start*/
+.setting_content_area{
+    height: 570px;
+overflow-y: scroll;
+}
+/*setting_content_area end*/
+/*preferences_area_start*/
+.preferences_area_full {
+    background: $text_bg_color;
+    margin: 20px 0px;
+    padding: 20px 0px;
+    border: $border;
+    .preferences_area_container {
+        border: $border;
+    }
+}
+
+/* preferences_title */
+.preferences_title {
+    border: $border;
+    margin-bottom: 15px;
+
+    h3 {
+        font-family: $Poppins;
+        text-transform: capitalize;
+        font-size: 18px;
+        font-weight: 600;
+        color: $color;
+
+    }
+}
+
+/*preferences_content_all*/
+.preferences_content_all {
+    border: $border;
+}
+
+/*preferences_content_start*/
+
+.content_icon_and_text {
+    display: flex;
+    margin: 20px 0px;
+    border: $border;
+
+    /*dark theme area start*/
+    .content_icon_text_and_chackbox {
+        display: flex;
+    }
+
+    /*dark theme area end*/
+
+    .content_icon {
+        width: 30px;
+        border: $border;
+        align-items: center;
+        display: flex;
+
+        i {
+            font-size: 10px;
+            font-size: 14px;
+            color: $off_white;
+        }
+    }
+
+    .content_text {
+        align-items: center;
+        display: flex;
+        border: $border;
+
+        span {
+            font-family: $Poppins;
+            text-transform: capitalize;
+            font-size: 13px;
+            color: $color;
+            // font-weight: 600;
+        }
+    }
+
+    .check_box {
+        align-items: center;
+        display: flex;
+
+        form {
+            align-items: center;
+            display: flex;
+
+            input {}
+        }
+    }
+}
+
+/*dark theme area start*/
+.content_icon_text_and_chackbox_all {
+    justify-content: space-between;
+}
+
+/*dark theme area end*/
+/*preferences_area_end*/
+
+/*account_area_start*/
+.account_area_full {
+    border: $border;
+    background: $text_bg_color;
+    margin: 20px 0px;
+    padding: 20px 0px;
+
+    .account_area_container {
+        border: $border;
+    }
+}
+
+/*account_title*/
+.account_title {
+    border: $border;
+
+    h3 {
+        font-family: "Poppins";
+        text-transform: capitalize;
+        font-size: 18px;
+        font-weight: 600;
+        color: $color;
+    }
+}
+
+/*account_content_all start*/
+.account_content_all {
+    border: $border;
+
+    /*account_content_start*/
+    .account_icon_and_text {
+        display: flex;
+        margin: 20px 0px;
+        border: $border;
+
+        .account_icon {
+            width: 30px;
+            border: $border;
+            align-items: center;
+            display: flex;
+
+            i {
+                font-size: 14px;
+                color: $off_white;
+            }
+        }
+
+        .account_text {
+            border: $border;
+            align-items: center;
+            display: flex;
+
+            span {
+                font-family: "Poppins";
+                text-transform: capitalize;
+                font-size: 13px;
+                color: $color;
+            }
+        }
+    }
+
+}
+
+/*account_area_end*/
+
+
+/*account_area_end*/

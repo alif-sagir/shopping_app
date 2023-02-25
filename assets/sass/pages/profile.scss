@@ -1,0 +1,260 @@
+/*profile_area_start*/
+.profile_area_full {
+    border: $border;
+    height: 650px;
+    // overflow-y: scroll;
+
+    .profile_content {}
+}
+
+/*profile_img start*/
+.profile_img_area_full {
+    border: $border;
+
+    .profile_img {
+        border: $border;
+        justify-content: center;
+        display: flex;
+        margin-top: 30px;
+
+
+        .image_e {
+            width: 200px;
+            height: 200px;
+            border: $border;
+            overflow: hidden;
+            border-radius: 100px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+/*profile_img end*/
+
+/*profile_name start*/
+.profile_name_area_full {
+    border: $border;
+
+    .profile_name {
+        border: $border;
+        overflow: hidden;
+        align-items: center;
+        display: flex;
+        margin: 15px 0px;
+
+        span {
+            font-family: "Poppins";
+            text-transform: capitalize;
+            font-size: 25px;
+            color: #080405;
+        }
+    }
+}
+
+
+/*profile_name end*/
+
+/*address_phone_gmail_edit_area_full start*/
+.address_phone_gmail_edit_area_full {
+    border: $border;
+    background: $text_bg_color;
+    padding: 15px 0px;
+
+    /*address_phone_gmail and edit_area start*/
+    .address_phone_gmail_edit_area {
+        border: $border;
+        // display: flex;
+        justify-content: space-between;
+        padding: 10px 0px;
+
+        /*address_phone_gmail area*/
+        .icon_title {
+            border: $border;
+            display: flex;
+            margin-bottom: 5px;
+
+            // align-items: center;
+            .icon {
+                border: $border;
+                width: 20px;
+                align-items: center;
+                display: flex;
+
+                i {
+                    border: $border;
+                    font-size: 16px;
+                    color: $off_white;
+                }
+            }
+
+            .name_title {
+                border: $border;
+                // width: 100px;
+                overflow: hidden;
+                align-items: center;
+display: flex;
+
+                span {
+                    border: $border;
+                    font-family: "Poppins";
+                    text-transform: capitalize;
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: $color;
+                }
+            }
+        }
+
+        /*edit_area*/
+        .text_edit-icon {
+            border: $border;
+            display: flex;
+            // align-items: center;
+            justify-content: space-between;
+
+            .name_text {
+                border: $border;
+                overflow: hidden;
+                // width: 117px;
+                margin-left: 20px;
+                align-items: center;
+display: flex;
+
+                span {
+                    border: $border;
+                    font-family: "Poppins";
+                    text-transform: capitalize;
+                    font-size: 14px;
+                    color: $color;
+                }
+            }
+
+            .edit_icon {
+
+                align-items: center;
+display: flex;
+                i {
+                    border: $border;
+                    padding: 4px;
+                    font-size: 12px;
+                    color: $off_white;
+                    border-radius: 5px;
+                    background: rgba(174, 148, 158, 0.14);
+                }
+            }
+
+            
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*profile_address_phone_gmail start*/
+.profile_address_phone_gmail {
+    border: $border;
+
+    table {
+        border: $border;
+
+        tr {
+            display: flex;
+
+
+            .icon_title {
+                display: flex;
+
+                .name_icon {
+                    border: $border;
+                    margin-right: 10px;
+
+                    i {
+                        font-size: 16px;
+                        color: $off_white;
+                    }
+                }
+
+                .name_title {
+                    border: $border;
+
+                    span {
+                        font-family: "Poppins";
+                        text-transform: capitalize;
+                        font-size: 16px;
+                        color: #080405;
+                    }
+                }
+            }
+
+            .semecolon {
+                border: $border;
+                margin: 0px 5px;
+
+                span {
+                    font-family: "Poppins";
+                    font-size: 16px;
+                    color: #080405;
+                }
+            }
+
+            .content_name_edit_area {
+                display: flex;
+                border: $border;
+
+                .name_content {
+                    border: $border;
+
+                    span {
+                        font-family: "Poppins";
+                        text-transform: capitalize;
+                        font-size: 16px;
+                        color: #080405;
+                    }
+                }
+
+                .edit_area {
+                    display: flex;
+
+                    .edit_icon {
+                        i {
+                            font-size: 16px;
+                            color: #080405;
+                        }
+                    }
+
+                    .edit_text {
+                        span {
+                            font-family: "Poppins";
+                            text-transform: capitalize;
+                            font-size: 16px;
+                            color: #080405;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+/*profile_address_phone_gmail end*/
+/*profile_area_end*/

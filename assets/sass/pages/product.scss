@@ -1,0 +1,133 @@
+/*product_area_start*/
+.product_area_full {
+    border: $border;
+
+    .prodect_area_container {
+        border: $border;
+    }
+}
+
+/*search_area start*/
+.search_area_full {
+    position: relative;
+    margin-bottom: 20px;
+    border: $border;
+    padding-bottom: 10px;
+
+    .input_area {
+        input {
+            width: 100%;
+            padding-left: 35px;
+            font-family: $Poppins;
+            color: $off_white;
+            padding: 7px 0px 7px 35px;
+            font-size: 15px;
+            border: 0px;
+            border-radius: 10px;
+            background: $icon_bg_color;
+        }
+    }
+
+
+
+    .icon {
+        i {
+            position: absolute;
+            top: 11px;
+            left: 10px;
+            color: $off_white;
+        }
+    }
+
+}
+
+/*search_area end*/
+/*product_content start*/
+.product_content {
+    border: $border;
+    background: $icon_bg_color;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 0px;
+
+    .product_img {
+        border: $border;
+        height: 79px;
+        width: 80px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        cursor: pointer;
+        overflow: hidden;
+        img {
+            border: $border;
+            width: 100%;
+        }
+    }
+
+    .product_text {
+        border: $border;
+        margin: 8px 0px 9px 10px;
+        line-height: 15px;
+
+        .product_title {
+            border: $border;
+
+            span {
+                font-family: $Poppins;
+                font-size: 14px;
+                color: $color;
+                text-transform: capitalize;
+            }
+        }
+
+        .product_select {
+            border: $border;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            font-size: 15px;
+            font-weight: 600;
+
+            .minas {
+                font-family: $Poppins;
+                color: $off_white;
+                cursor: pointer;
+            }
+
+            .number {
+                font-family: $Poppins;
+                padding: 0px 10px;
+                background: rgba(174, 148, 158, 0.14);
+                margin: 0px 8px;
+                line-height: 23px;
+                border-radius: 2px;
+            }
+
+            .plus {
+                font-family: $Poppins;
+                color: $off_white;
+                cursor: pointer;
+            }
+        }
+
+        .product_price {
+            border: $border;
+            text-align: center;
+            margin-right: 45px;
+
+
+            span {
+                font-family: $Poppins;
+                font-size: 16px;
+                color: $off_white;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
+/*product_content_end*/
+
+
+/*product_area_end*/
