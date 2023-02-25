@@ -319,7 +319,7 @@
             setTimeout(() => {
                 let link = window.location.hash.substring(1);
                 link += ".html"
-                link = window.location.origin + '/' + link;
+                link = window.location.origin + '/shopping_app/' + link;
                 // console.log(link);
                 fetch(link)
                     .then(response => response.text())
